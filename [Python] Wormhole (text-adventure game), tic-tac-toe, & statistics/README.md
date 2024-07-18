@@ -1,4 +1,4 @@
-#"Wormhole" README
+# "Wormhole" README
 
 ### To run and play Wormhole (a short, text-adventure game): 
     1. Download ZIP
