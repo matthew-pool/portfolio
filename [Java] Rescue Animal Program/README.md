@@ -1,4 +1,4 @@
-Program to add and remove dogs and monkeys and to print out various formatted lists.
+This is a simple program to add and remove dogs and monkeys to a database and print out various formatted lists of the data.
 
 ![pic1](readme_images/Picture1.png)
 ![pic2](readme_images/Picture2.png)
