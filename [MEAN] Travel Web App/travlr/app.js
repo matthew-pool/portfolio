@@ -1,12 +1,22 @@
 /* App starting point */
+
 /**
- * customer server: npm start (/travlr)
- * admin server:    ng serve  (/travlr/app_admin)
+ * Backend Server:
+ *  cd <backend_directory>
+ *  npm install
+ *  node .
+ *  HTML: http://localhost:3000
+ *  JS: http://localhost:3000/travel
+ *  API Explorer (LoopBack): http://localhost:3000/explorer
  * 
- * Customer HTML URL: localhost:3000
- * Customer JS URL: localhost:3000/travel 
- * Admin URL: localhost:4200
+ * Frontend Server:
+ *  cd <frontend_directory>
+ *  npm install
+ *  ng serve
+ *  http://localhost:4200 
+ * 
  */
+
 /**
  * NOTE:  Handlebars is a JS templating engine that dynamically generates HTML
  *        and separates the presentation layer (view) from the logic layer.
