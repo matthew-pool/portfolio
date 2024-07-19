@@ -1,0 +1,45 @@
+﻿  breakout.cpp
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\Breakout\OpenGLSample\OpenGLSample\linmath.h(64,1): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'breakout.cpp')
+  
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\Breakout\OpenGLSample\OpenGLSample\linmath.h(65,1): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'breakout.cpp')
+  
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\Breakout\OpenGLSample\OpenGLSample\linmath.h(66,1): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'breakout.cpp')
+  
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\Breakout\OpenGLSample\OpenGLSample\linmath.h(344,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'breakout.cpp')
+  
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\Breakout\OpenGLSample\OpenGLSample\linmath.h(597,18): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'breakout.cpp')
+  
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\Breakout\OpenGLSample\OpenGLSample\linmath.h(604,18): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'breakout.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'breakout.cpp')
+  C:\OpenGL\GLFW\include\GLFW\glfw3.h(123,1):
+  see previous definition of 'APIENTRY'
+  
+  milestone_6_5.cpp
+  super_mario_bros.cpp
+  shader.cpp
+  Source.cpp
+  Generating Code...
+  glad.c
+breakout.obj : error LNK2019: unresolved external symbol glfwInit referenced in function main
+breakout.obj : error LNK2019: unresolved external symbol glfwTerminate referenced in function main
+breakout.obj : error LNK2019: unresolved external symbol glfwWindowHint referenced in function main
+breakout.obj : error LNK2019: unresolved external symbol glfwCreateWindow referenced in function main
+breakout.obj : error LNK2019: unresolved external symbol glfwDestroyWindow referenced in function main
+breakout.obj : error LNK2019: unresolved external symbol glfwWindowShouldClose referenced in function main
+breakout.obj : error LNK2019: unresolved external symbol glfwSetWindowShouldClose referenced in function "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPEAUGLFWwindow@@@Z)
+breakout.obj : error LNK2019: unresolved external symbol glfwGetFramebufferSize referenced in function main
+breakout.obj : error LNK2019: unresolved external symbol glfwPollEvents referenced in function main
+breakout.obj : error LNK2019: unresolved external symbol glfwGetKey referenced in function "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPEAUGLFWwindow@@@Z)
+breakout.obj : error LNK2019: unresolved external symbol glfwMakeContextCurrent referenced in function main
+breakout.obj : error LNK2019: unresolved external symbol glfwSwapBuffers referenced in function main
+breakout.obj : error LNK2019: unresolved external symbol glfwSwapInterval referenced in function main
+C:\OpenGL\GLFW\lib-vc2022\glfw3.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\Breakout\OpenGLSample\x64\Debug\OpenGLSample.exe : fatal error LNK1120: 13 unresolved externals

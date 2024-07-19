@@ -1,0 +1,21 @@
+﻿  glad.c
+  super_mario_bros.cpp
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\shader.h(57,34): warning C4101: 'e': unreferenced local variable
+  (compiling source file 'super_mario_bros.cpp')
+  
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(256,35): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(550,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1368,29): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1388,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1389,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1394,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1395,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1396,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1397,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  shader.cpp
+  Source.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 760 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  OpenGLSample.vcxproj -> C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\Release\OpenGLSample.exe

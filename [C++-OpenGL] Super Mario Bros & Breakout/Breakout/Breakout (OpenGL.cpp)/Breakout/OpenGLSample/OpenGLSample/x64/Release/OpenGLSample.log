@@ -1,0 +1,34 @@
+﻿  assignment_2_3.cpp
+  assignment_4_3.cpp
+  assignment_5_3.cpp
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\OpenGLSample\assignment_5_3.cpp(296,35): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\OpenGLSample\assignment_5_3.cpp(1194,29): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\OpenGLSample\assignment_5_3.cpp(1214,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\OpenGLSample\assignment_5_3.cpp(1215,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\OpenGLSample\assignment_5_3.cpp(1220,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\OpenGLSample\assignment_5_3.cpp(1221,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\OpenGLSample\assignment_5_3.cpp(1222,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\OpenGLSample\assignment_5_3.cpp(1223,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  milestone_3_5.cpp
+  milestone_4_5.cpp
+  shader.cpp
+  Source.cpp
+  glad.c
+assignment_5_3.obj : error LNK2001: unresolved external symbol glfwSwapBuffers
+assignment_5_3.obj : error LNK2001: unresolved external symbol glfwSetFramebufferSizeCallback
+assignment_5_3.obj : error LNK2001: unresolved external symbol glfwGetTime
+assignment_5_3.obj : error LNK2001: unresolved external symbol glfwGetKey
+assignment_5_3.obj : error LNK2001: unresolved external symbol glfwTerminate
+assignment_5_3.obj : error LNK2001: unresolved external symbol glfwSetMouseButtonCallback
+assignment_5_3.obj : error LNK2001: unresolved external symbol glfwPollEvents
+assignment_5_3.obj : error LNK2001: unresolved external symbol glfwInit
+assignment_5_3.obj : error LNK2001: unresolved external symbol glfwSetWindowShouldClose
+assignment_5_3.obj : error LNK2001: unresolved external symbol glfwSetScrollCallback
+assignment_5_3.obj : error LNK2001: unresolved external symbol glfwCreateWindow
+assignment_5_3.obj : error LNK2001: unresolved external symbol glfwWindowHint
+assignment_5_3.obj : error LNK2001: unresolved external symbol glfwSetInputMode
+assignment_5_3.obj : error LNK2001: unresolved external symbol glfwMakeContextCurrent
+assignment_5_3.obj : error LNK2001: unresolved external symbol glfwGetProcAddress
+assignment_5_3.obj : error LNK2001: unresolved external symbol glfwSetCursorPosCallback
+assignment_5_3.obj : error LNK2001: unresolved external symbol glfwWindowShouldClose
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\x64\Release\OpenGLSample.exe : fatal error LNK1120: 17 unresolved externals
