@@ -1,4 +1,4 @@
-##<strong>Table of Contents</strong>
+## <strong>Table of Contents</strong>
 * ### [Go to Architecture][#Architecture]
 * ### Functionality
 * ### Testing
