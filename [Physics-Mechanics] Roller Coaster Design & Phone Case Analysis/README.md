@@ -6,7 +6,7 @@ Comparison of the Newtonian physics involved in a dropped phone with varying cas
 ![phone1](images/phone3.png)
 
 ### (2) Roller Coaster Design Report:
-Custom roller coaster design that follows the laws of physics. Report includes graphical design, as well as the physics and mathematics involved.
+Custom roller coaster design that follows the laws of physics (minus negligible friction). Report includes graphical design, as well as the physics and mathematics involved.
     
 ![coaster1](images/coaster1.png)
 ![coaster1](images/coaster2.png)
