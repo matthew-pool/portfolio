@@ -14,5 +14,3 @@ Software developers play a critical role in this world, and the job should be ta
   •	Markkula Center for Applied Ethics: offers resources on ethics in professional and corporate settings
 
 Thank you for reading, and feel free to contact me with any comments, questions, or concerns!
-
-[Matt](https://github.com/matthew-pool)
