@@ -1,17 +1,17 @@
-# Table of Contents
+##<strong>Table of Contents</strong>
 * ## [Go to Architecture][#Architecture]
 * ## Functionality
 * ## Testing
 * ## User Interface
 * ## Reflection
 
-# Architecture
-## Introduction
-The admin site for Travlr Getaways consists of a client-based single-page application (SPA) web page that uses [Bootstrap](https://getbootstrap.com) CSS and Angular, which provides reusable UI components and logic. The architecture, functionality, and testing of the SPA site can be better understood by the following information. 
+## Architecture
+### Introduction
+The admin site for Travlr Getaways consists of a client-based single-page application (SPA) web page that uses [Bootstrap CSS](https://getbootstrap.com) and Angular, which provides reusable UI components and logic. The architecture, functionality, and testing of the SPA site can be better understood by the following information. 
 Angular vs Express Frameworks
 The customer-facing site consists of Node.js used in conjunction with the Express framework, which consists of HTML pages served from (and rendered in) the server, which utilizes JavaScript. The Express router manages server-side routing, while client-side routing is managed by RouterModule. Middleware is used for request handling, HTTP responses, and other functionality.
 The Angular-based admin-facing website consists of a modular architecture that includes routes, modules, services, and components. Components consist of HTML, CSS, and TypeScript files. TypeScript is a JavaScript superset that includes type safety to help catch data type errors at compile time.
-Handlebars
+### Handlebars
 Handlebars (HBS) was implemented to add dynamic content to the site using a JSON file to define relevant data. Handlebars is a JS templating language that uses a template and input object to generate Dynamic HTML (hypertext markup language) content by separating the presentation layer from the logic layer. Handlebars also makes it possible to create reusable template components, like headers and footers. JSON (JavaScript object notation) is a text format that is language independent and easy to read.
 Mongoose Middleware
 The middleware in MongoDB (NoSQL) database is used with Mongoose – an Object Data Modeling (ODM) library for MongoDB and Node.js. Middleware provides a way to automatically perform actions before or after certain events in the lifecycle of database operations, including interactions with database models and schemas. Mongoose is used to connect the Express app to the MongoDB (NoSQL) database and is directly added to the app dependencies section in package.json, using ‘npm i mongoose’ in the terminal. Mongoose is used to define schemas, consisting of any number of paths (data entities) that define the data (structure) in each associated document. The schema compiles into a model in which a single instance of the model maps directly to a single database instance, allowing CRUD operations (Create, Read, Update, Delete). Middleware functions (hooks) include those for data validation, logging, resource cleanup, and other functions. Pre-middleware runs before lifecycle events using save, validate, and remove, while post-middleware runs after lifecycle events using log or next, for example
