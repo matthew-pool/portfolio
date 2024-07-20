@@ -7,4 +7,5 @@ Microsoft Visual C++ Redistributables or other dependencies may be required.
 
 ![Super Mario Bros](images/mario1.png)
 ![Super Mario Bros](images/mario2.png)
+![Super Mario Bros](images/mario3.png)
 ![Breakout](images/breakout1.png)
