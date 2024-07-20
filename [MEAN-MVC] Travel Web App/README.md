@@ -3,7 +3,7 @@
 * ### Functionality
 * ### Testing
 * ### User Interface
-* ### Reflection  <br><br>
+* ### Reflection <br><br>
 ## Architecture
 ### Introduction
 The admin site for Travlr Getaways consists of a client-based single-page application (SPA) web page that uses [Bootstrap CSS](https://getbootstrap.com) and Angular, which provides reusable UI components and logic. The architecture, functionality, and testing of the SPA site can be better understood by the following information. 
