@@ -1,4 +1,4 @@
-Limited demos to showcase OpenGL (with C++)
+(Limited demos to showcase OpenGL (with C++))
 <br>
 ### TO RUN “Super Mario Bros” or “Breakout”:
 1.	Download ZIP
