@@ -1,0 +1,11 @@
+if MAP:
+    player_map =    [['__ __ __'],  # very top horizontal
+                    ['\|  \|  \|  \|'],  # top vertical
+                    ['-- -- --'],  # top-ish horizontal
+                    ['\|  \|  \|  \|'],  # mid vertical
+                    ['-- -- --'],  # bottom-ish horizontal
+                    ['\|  \|  \|  \|'],  # bottom vertical
+                    ['-- -- --'],  # very bottom horizontal
+                    ['  \|  \|   '],  # start vertical
+                    ['   __     ']  # start horizontal
+                    ]
