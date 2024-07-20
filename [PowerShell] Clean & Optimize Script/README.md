@@ -1,4 +1,4 @@
-### A PowerShell script I create to help automate the tedious and redundant optimization, updating, and cleaning my Windows OS. Pain leads to innovation.
+#### A PowerShell script I created to help automate the tedious and mundane optimization, updating, and cleaning my Windows OS. Pain leads to innovation.
 
 ![pic](images/Picture1.png)
 ![pic](images/Picture2.png)
