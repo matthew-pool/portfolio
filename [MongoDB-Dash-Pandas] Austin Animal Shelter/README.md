@@ -1,36 +1,21 @@
+# Grazioso Salvare AAC Dashboard
 
-Grazioso Salvare AAC Dashboard
+## <strong>Table of Contents</strong>
 
-Table of Contents
+•	[About the Project](#about-the-project)
+•	[Development](#development)
+•	[MongoCrud](#mongocrud)
+•	[Dash Dashboard](#dash-dashboard)
+•	[Functionality](#functionality)
+•	[Tools](#tools)
+•	[Contact](#contact)
 
-•	About the Project
-•	Development
-•	MongoCrud
-•	Dash Dashboard
-•	Functionality
-•	Tools
-•	Contact
-
-
-
-
-
-
-
-
-
-About the Project
+## About the Project
 This project utilizes a Model-View-Controller (MVC) software design pattern, with a Dash dashboard (View), a MongoDB database (Model), and callback functions (Controller). Databases are used in almost every type of software application, and MongoDB is among the most popular. MongoDB is a NoSQL (Not only SQL) document-oriented database system that specializes in horizontal scaling and fast transactions. Working with MongoDB can prove to be quite tedious, and it is common for users to make mistakes when working with a command-line interface (CLI).
 
 The Dashboard for Grazioso Salvare is designed to interact with the Austin Animal Center (AAC) ‘animals’ collection, which holds data for cats and dogs that the AAC currently houses. The dashboard integrates with the custom mongo_crud.py module’s MongoCrud class to abstract away the tedious nature of connecting to a MongoDB database and executing basic CREATE, READ, UPDATE, and DELETE (CRUD) operations. The user can create new documents to be inserted into the ‘animals’ collection of the’ AAC’ database,  view (read) documents in the database by using custom query filters, update documents, and delete documents based on matching queries. More on functionality later.
 
-
-
-
-
-
-
-Development
+## Development
 The connection is initialized, and the user is authenticated, upon successful execution of the program. The mongo_crud module creates a MongoClient class instance as seen below:
  
 The module’s ‘create’ function performs a MongoDB ‘insert’ command:
@@ -41,11 +26,7 @@ The module’s ‘update’ function performs a MongoDB ‘update_many’ comman
  
 The module’s ‘delete’ function performs a MongoDB ‘delete_many’ command:
  
-
-
-
-
-MongoCrud (mongo_crud.py)
+## MongoCrud (mongo_crud.py)
 The mongo_crud module’s MongoCrud class can be thought of as the middle “glue” layer between the MongoDB database (base level) and web app client that uses the “DASH” dashboard on the frontend.
 The mongo_crud.py module should be moved to the site-packages location that contains other 3rd party modules:
 •	Windows:  
@@ -89,7 +70,7 @@ If you would like to run the tests programmatically from your API, you can simpl
 
 All tests should pass without error:
  
-Dash Dashboard
+## Dash Dashboard
 The GUI (graphical user interface) dashboard was created using Dash from the Plotly library, along with the Python programming language and JetBrain’s PyCharm integrated development environment (IDE) and Jupyter Notebook.
 To reproduce the dashboard, the appropriate libraries must be imported:
  
@@ -104,12 +85,7 @@ To create the View, a layout is created:
 
 The Controller consists of a series of dynamically reactive callbacks, which process changes in user input and output the appropriate changes:
  
- 
-
-
-
-
-Functionality
+## Functionality
 The mongo_crud module abstracts away the tedious nature of working with a MongoDB database. The user may sort and filter the table contents or limit the number of rows (documents) displayed. A pie chart initially appears, showing the animals with the highest occurrence at the Austin Animal Center: 
  
 In addition, a user may select one of the displayed filter options to show preferred dog breeds (and sexes and ages) preferable for training as rescue dogs of each specified type:
@@ -126,17 +102,7 @@ The ‘Reset’ button may be clicked to set options to their default state. Sel
 
 Disaster Rescues or Individual Tracking
  
-
-
-
-
-
-
-
-
-
-
-Tools
+## Tools
  
 
  
@@ -153,7 +119,7 @@ Tools
 
  
 
-Contact
+## Contact
 Matthew Pool
 Computer Science, Southern New Hampshire University
 matthew.pool@snhu.edu
