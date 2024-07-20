@@ -1,3 +1,3 @@
 ### User Interface and User Experience Design
 
-![pic](images/High-Fidelity Wireframe [U.S. English].png)
+![pic](High-Fidelity%20Wireframe%20[U.S.%20English].png)
