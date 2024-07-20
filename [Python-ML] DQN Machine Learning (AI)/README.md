@@ -1,4 +1,4 @@
-### Main Project
+### Main Project: Deep Q-Learning Network (DQN)
 
 This project focused on creating a Deep Q-learning network (DQN) to train a pirate agent to find the treasure (goal), using the shortest possible path. The provided environment (TreasureEnvironment.py) was given and included a maze matrix, reset position function, state updates, rewards, actions, game status, and graphical visualization. Experience replay functionality was provided in the GameExperience.py module and facilitated storage for episodes in memory, tracking all states from initial to terminal, and predicting the next action based on the current environment state. Along with these elements, the build model and tests for winning the game were included prior to coding the DQN. 
 
