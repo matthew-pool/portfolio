@@ -33,16 +33,13 @@ With this in mind, it is possible that dependencies go out of date and new secur
 The abundance of potential security risks makes thorough and robust testing that much more important; although, this may prove more difficult when working with various security mechanisms. Multiple user types and corresponding sessions will need to be managed. Bandwidth throttling, which is commonly implemented to prevent DoS (Denial of Service) attacks, can increase the duration tests take to complete. Token expirations will need to be considered for tests of longer durations. Manual management may need to be performed to log in and out of various accounts and to ensure all (or enough) scenarios and test cases are assessed appropriately and CAPTCHAS and MFA (multi-factor authentication) are properly handled. To test HTTPS, TLS (or SSL) certificate will need managed as well. Keeping these things in mind and following industry-standard best-practices will help build a secure and robust web app!
 
 ## User Interface
-Images
- 
-	      
- 		 
-
-
-
+![pic](images/Picture1.png)
+![pic](images/Picture2.png)
+![pic](images/Picture3.png)
+![pic](images/Picture4.png)
 
 ## Reflection
-This course has really answered a lot of questions I had regarding full stack software development. I have learned more about the [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) (Model-View-Controller) architecture, HTML, JS, and TypeScript. I have had the opportunity to incorporate [Git](https://www.git-scm.com/) CLI into the software development lifecycle. Throughout development of this web app, I gained experience working with various technologies, including Bootstrap CSS, Handlebars, Angular, Express.js, node.js, among others. It has been a satisfying experience getting to see this web app come together. Keep coding!
+This course has really answered a lot of questions I had regarding full stack software development. I have learned more about the [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) (Model-View-Controller) architecture, HTML, JS, and TypeScript. I have had the opportunity to incorporate [Git](https://www.git-scm.com/) CLI into the software development lifecycle. Throughout development of this web app, I gained experience working with various technologies, including Bootstrap CSS, Handlebars, Angular, Express.js, node.js, among others. It has been a satisfying experience getting to see this web app come together. Keep coding! <br><br>
 
 Matthew Pool
 06/21/2024
