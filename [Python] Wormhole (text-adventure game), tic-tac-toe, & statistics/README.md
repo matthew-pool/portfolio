@@ -9,3 +9,5 @@
 ![pic](images/Picture2.png)
 ![pic](images/Picture3.png)
 ![pic](images/Picture4.png)
+
+NOTE: tic_tac_toe and statistics are additional projects
