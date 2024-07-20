@@ -1,7 +1,9 @@
-### TO RUN “Super Mario Bros” or “Breakout” (limited demo):
+### Limited demmos to showcase OpenGL (with C++)
+
+### TO RUN “Super Mario Bros” or “Breakout”:
 1.	Download ZIP
-2.	Extract ZIP
-3.	Open "RUN TO START" in root directory
+2.	Extract ZIP (optional)
+3.	Open "RUN TO START" in project root directory
 
 Microsoft Visual C++ Redistributables or other dependencies may be required.
 
