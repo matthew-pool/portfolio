@@ -1,11 +1,11 @@
-(Limited demos to showcase my work with OpenGL and C++)
-<br>
 ### TO RUN “Super Mario Bros” or “Breakout”:
 1.	Download ZIP
 2.	Extract ZIP (optional)
 3.	Open "RUN TO START" in project root directory
 
-Microsoft Visual C++ Redistributables or other dependencies may be required.
+* Super Mario Bros allows switching between a 2D (1st image) and 3D (2nd image) view.
+
+NOTE: Microsoft Visual C++ Redistributables or other dependencies may be required.
 
 ![Super Mario Bros](images/mario3.png)
 ![Super Mario Bros](images/mario1.png)
