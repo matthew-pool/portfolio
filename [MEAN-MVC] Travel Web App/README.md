@@ -1,5 +1,5 @@
 ## <strong>Table of Contents</strong>
-* ### [Go to Architecture][#architecture]
+* ### [Architecture](#architecture)
 * ### Functionality
 * ### Testing
 * ### User Interface
