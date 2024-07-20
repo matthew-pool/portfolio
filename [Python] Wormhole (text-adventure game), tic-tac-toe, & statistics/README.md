@@ -3,7 +3,7 @@
 ### To run and play Wormhole (a short, text-adventure game): 
     1. Download ZIP
     2. Extract ZIP (optional)
-    3. Run 'Wormhole (EXE)' in root directory
+    3. Run 'Wormhole (EXE)' in project root directory
 
 ![pic](images/Picture1.png)
 ![pic](images/Picture2.png)
