@@ -1,9 +1,9 @@
 ##<strong>Table of Contents</strong>
-* ## [Go to Architecture][#Architecture]
-* ## Functionality
-* ## Testing
-* ## User Interface
-* ## Reflection
+* ### [Go to Architecture][#Architecture]
+* ### Functionality
+* ### Testing
+* ### User Interface
+* ### Reflection
 
 ## Architecture
 ### Introduction
