@@ -141,7 +141,7 @@ def room_message(_current_room, _inventory):
             room_text = 'A giant, hideous alien worm creature erupts from the ground below you. Looks like you\'re worm food...\nOof.\n\nGAME OVER'
 
     else:
-        room_text = 'Where the H*ll are you!?'
+        room_text = 'Where on Earth are you!?'
 
     return room_text
 
@@ -217,10 +217,10 @@ def is_valid(_user_input, _current_room, _rooms, _silly_count, _inventory):
                     elif _silly_count == 2:
                         print("OK. Look, bruh. I appreciate your ruthless persistence for {}, but it's just not here!!!".format(_user_input[1]))
                     elif _silly_count == 3:
-                        print("Huh?")
+                        print("BRUH?!")
                     elif _silly_count == 4:
                         rules()
-                        _silly_count = 0
+                        _silly_count = -1
 
                     _silly_count += 1
 
@@ -256,7 +256,7 @@ def is_valid(_user_input, _current_room, _rooms, _silly_count, _inventory):
                         print("Huh?")
                     elif _silly_count == 4:
                         rules()
-                        _silly_count = 0
+                        _silly_count = -1
 
                     _silly_count += 1
 
@@ -320,7 +320,7 @@ def main():
     # rooms dict links a primary room key with a value consisting of at least one key(room):value(direction)
     rooms = {
         # start location
-        'cavern':        {'north': 'entryway', 'item': ''},
+        'cavern':       {'north': 'entryway', 'item': ''},
         # 1st official game room
         'entryway':     {'east': 'freezer', 'west': 'garden', 'item': 'compass'},
         # west wing
@@ -330,7 +330,7 @@ def main():
         # east wing
         'freezer':      {'west': 'entryway', 'north': 'laboratory', 'item': 'key'},
         'laboratory':   {'south': 'freezer', 'north': 'dump', 'item': 'gun'},
-        'dump':     {'south': 'laboratory', 'west': 'worm incubation chamber', 'item': 'poop'},
+        'dump':         {'south': 'laboratory', 'west': 'worm incubation chamber', 'item': 'poop'},
         # enemy location
         'worm incubation chamber': {'item': 'alien worm'},
     }
@@ -408,4 +408,7 @@ if __name__ == "__main__":
 
     # game over
     print(BYE)
+    
+    user_input = get_input();
+
     exit()
