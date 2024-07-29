@@ -11,4 +11,5 @@ Detailed documentation can be found in [README.docx](https://github.com/matthew-
 * Select "Jupyter Kernel..."
 * Select the Python environment to use
 * Install any missing modules using pip or another installation method
+* Select "Run" once again if needed
 * Navigate in your browser to [http://127.0.0.1/15185/](http://127.0.0.1/15185/)
