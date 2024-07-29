@@ -1,6 +1,6 @@
-MEAN web app (v 1.0.2) project started using the following GitHub repositories:
-  https://github.com/AngularTemplates/learn-angular-from-scratch-step-by-step
-  https://github.com/AngularTemplates/learn-how-to-build-a-mean-stack-application
+### MEAN web app (v 1.0.2) started using the following GitHub repositories:
+* https://github.com/AngularTemplates/learn-angular-from-scratch-step-by-step
+* https://github.com/AngularTemplates/learn-how-to-build-a-mean-stack-application
 
 ## <strong>Table of Contents</strong>
 * [Architecture](#architecture)
@@ -8,7 +8,7 @@ MEAN web app (v 1.0.2) project started using the following GitHub repositories:
 * [Testing](#testing)
 * [User Interface](#user-interface)
 * [Reflection](#reflection)
-* [To Run](#run) <br><br>
+* [To Run](#to-run) <br><br>
 
 ## Architecture
 ### Introduction
