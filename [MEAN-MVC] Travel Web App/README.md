@@ -1,4 +1,4 @@
-#### MEAN web app (v 1.0.2) started using the following GitHub repositories:
+#### 'Travlr' web app (v 1.0.2) started using the following GitHub repositories:
 * https://github.com/AngularTemplates/learn-angular-from-scratch-step-by-step
 * https://github.com/AngularTemplates/learn-how-to-build-a-mean-stack-application
 <br><br>
