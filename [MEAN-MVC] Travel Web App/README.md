@@ -60,19 +60,19 @@ This course has really answered a lot of questions I had regarding full stack so
 * npm audit fix
 * npm start
 
-6. To view the (HTML) customer 'Home' page, navigate to:
-* http://localhost:3000/
-
-7. To view the (JS) customer 'Travel' page, navigate to:
-* http://localhost:3000/travel
-
-8. Open a new CLI window in the /travlr subdirectory, and enter:
+6. Open a new CLI window in the /travlr subdirectory, and enter:
 * cd app_admin
 * npm install
 * npm audit fix
 * ng serve
 
-8. To view the admin SPA page, navigate to:
+7. To view the (HTML) customer 'Home' page, navigate to:
+* http://localhost:3000/
+
+8. To view the (JS) customer 'Travel' page, navigate to:
+* http://localhost:3000/travel
+
+9. To view the admin SPA page, navigate to:
 * http://localhost:4200 <br><br>
 
 
