@@ -1,4 +1,4 @@
-#### 'Travlr' web app (v 1.0.2) started using the following GitHub repositories:
+#### 'Travlr' web app started using the following GitHub repositories:
 * https://github.com/AngularTemplates/learn-angular-from-scratch-step-by-step
 * https://github.com/AngularTemplates/learn-how-to-build-a-mean-stack-application
 <br><br>
@@ -52,8 +52,8 @@ This course has really answered a lot of questions I had regarding full stack so
 ## To Run
 1. Install (or update) [Node.js](http://nodejs.org) and included necessary tools
 2. Install [MongoDB](http://www.mongodb.com)
-3. Download 'travlr' ZIP from current repo
-4. Unzip 'travlr' ZIP
+3. Download 'travlr [v0.6] [ZIP]' from current repo
+4. Unzip 'travlr [v0.6] [ZIP]'
 
 5. Open a Command Line Interface window in the /travlr subdirectory, and enter:
 * npm install
