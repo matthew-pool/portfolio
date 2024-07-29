@@ -1,9 +1,15 @@
+MEAN web app (v 1.0.2) project started using the following GitHub repositories:
+  https://github.com/AngularTemplates/learn-angular-from-scratch-step-by-step
+  https://github.com/AngularTemplates/learn-how-to-build-a-mean-stack-application
+
 ## <strong>Table of Contents</strong>
 * [Architecture](#architecture)
 * [Functionality](#functionality)
 * [Testing](#testing)
 * [User Interface](#user-interface)
-* [Reflection](#reflection) <br><br>
+* [Reflection](#reflection)
+* [To Run](#run) <br><br>
+
 ## Architecture
 ### Introduction
 The admin site for Travlr Getaways consists of a client-based single-page application (SPA) web page that uses [Bootstrap CSS](https://getbootstrap.com) and [Angular](https://angular.dev), which provides reusable UI components and logic. The architecture, functionality, and testing of the SPA site can be better understood by the following information. 
@@ -41,6 +47,33 @@ The abundance of potential security risks makes thorough and robust testing that
 
 ## Reflection
 This course has really answered a lot of questions I had regarding full stack software development. I have learned more about the [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) (Model-View-Controller) architecture, HTML, JS, and TypeScript. I have had the opportunity to incorporate [Git](https://www.git-scm.com/) CLI into the software development lifecycle. Throughout development of this web app, I gained experience working with various technologies, including Bootstrap CSS, Handlebars, Angular, Express.js, node.js, among others. It has been a satisfying experience getting to see this web app come together. Keep coding! <br><br>
+
+## To Run
+1. Install (or update) [Node.js](http://nodejs.org) and included necessary tools
+2. Install [MongoDB](http://www.mongodb.com)
+3. Download 'travlr' ZIP from current repo
+4. Unzip 'travlr' ZIP
+
+5. Open a Command Line Interface window in the /travlr subdirectory, and enter:
+* npm install
+* npm audit fix
+* npm start
+
+6. To view the (HTML) customer 'Home' page, navigate to:
+* http://localhost:3000/
+
+7. To view the (JS) customer 'Travel' page, navigate to:
+* http://localhost:3000/travel
+
+8. Open a new CLI window in the /travlr subdirectory, and enter:
+* cd app_admin
+* npm install
+* npm audit fix
+* ng serve
+
+8. To view the admin SPA page, navigate to:
+* http://localhost:4200 <br><br>
+
 
 Matthew Pool
 06/21/2024
