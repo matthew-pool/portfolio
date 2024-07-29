@@ -52,8 +52,8 @@ This course has really answered a lot of questions I had regarding full stack so
 ## To Run
 1. Install (or update) [Node.js](http://nodejs.org) and included necessary tools
 2. Install [MongoDB](http://www.mongodb.com)
-3. Download 'travlr [v0.6] [ZIP]' from current repo
-4. Unzip 'travlr [v0.6] [ZIP]'
+3. Download 'travlr [v0.6] [ZIP].zip' from current repo
+4. Unzip 'travlr [v0.6] [ZIP].zip'
 
 5. Open a Command Line Interface window in the /travlr subdirectory, and enter:
 * npm install
