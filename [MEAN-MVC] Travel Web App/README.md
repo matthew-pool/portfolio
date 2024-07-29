@@ -52,8 +52,8 @@ This course has really answered a lot of questions I had regarding full stack so
 ## To Run
 1. Install (or update) [Node.js](http://nodejs.org) and included necessary tools
 2. Install [MongoDB](http://www.mongodb.com)
-3. Download 'travlr [v0.6] [ZIP].zip' from current repo
-4. Unzip 'travlr [v0.6] [ZIP].zip'
+3. Download [travlr [v0.6] [ZIP].zip](https://github.com/matthew-pool/portfolio/raw/main/%5BMEAN-MVC%5D%20Travel%20Web%20App/travlr%20%5Bv0.6%5D%20%5BZIP%5D.zip) from current repo
+4. Unzip 'travlr [v0.6] [ZIP].zip' on your local machine
 
 5. Open a Command Line Interface window in the /travlr subdirectory, and enter:
 * npm install
@@ -73,8 +73,9 @@ This course has really answered a lot of questions I had regarding full stack so
 * http://localhost:3000/travel
 
 9. To view the admin SPA page, navigate to:
-* http://localhost:4200 <br><br>
+* http://localhost:4200 <br>
 
+NOTE: Version 0.7 adds user authentication<br><br>
 
 Matthew Pool
 06/21/2024
