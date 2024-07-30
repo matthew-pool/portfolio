@@ -10,3 +10,10 @@ Custom roller coaster design that follows the laws of physics (minus negligible 
     
 ![coaster1](images/coaster1.png)
 ![coaster1](images/coaster2.png)
+
+### (3) Supply Drop Plan:
+Diagramming and calculations of various supply drop and catapult scenarios.
+
+![drop](images/drop1.png)
+![drop](images/drop2.png)
+![drop](images/drop3.png)
