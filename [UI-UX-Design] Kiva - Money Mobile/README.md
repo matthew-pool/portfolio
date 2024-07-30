@@ -10,3 +10,4 @@ UI/UX design of a mobile consumer app alongside a cloud-based web app. The consu
 UI/UX design of a mobile app designed to help you understand the health aspects of the food you eat.
 
 ![pic](images/eat1.png)
+![pic](images/eat2.png)
