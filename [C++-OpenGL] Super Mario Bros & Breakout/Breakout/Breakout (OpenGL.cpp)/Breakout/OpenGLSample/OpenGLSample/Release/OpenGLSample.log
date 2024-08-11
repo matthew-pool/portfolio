@@ -1,0 +1,21 @@
+﻿  assignment_2_3.cpp
+  assignment_4_3.cpp
+  assignment_5_3.cpp
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\OpenGLSample\assignment_5_3.cpp(296,35): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\OpenGLSample\assignment_5_3.cpp(1194,29): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\OpenGLSample\assignment_5_3.cpp(1214,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\OpenGLSample\assignment_5_3.cpp(1215,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\OpenGLSample\assignment_5_3.cpp(1220,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\OpenGLSample\assignment_5_3.cpp(1221,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\OpenGLSample\assignment_5_3.cpp(1222,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\OpenGLSample\assignment_5_3.cpp(1223,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  milestone_3_5.cpp
+  milestone_4_5.cpp
+  shader.cpp
+  Source.cpp
+  glad.c
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 490 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  OpenGLSample.vcxproj -> C:\Users\mathy\Documents\~dellpickle_documents\~coding_projects\CS330\OpenGLSample\Release\OpenGLSample.exe

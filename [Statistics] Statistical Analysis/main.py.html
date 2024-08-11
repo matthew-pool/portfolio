@@ -1,0 +1,196 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #808080;}
+.s3 { color: #6a8759;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">pandas </span><span class="s0">as </span><span class="s1">pd</span>
+<span class="s0">import </span><span class="s1">scipy.stats </span><span class="s0">as </span><span class="s1">st</span>
+<span class="s0">import </span><span class="s1">matplotlib.pyplot </span><span class="s0">as </span><span class="s1">plt</span>
+<span class="s0">from </span><span class="s1">IPython.display </span><span class="s0">import </span><span class="s1">display</span><span class="s0">, </span><span class="s1">HTML</span>
+<span class="s0">import </span><span class="s1">statsmodels.formula.api </span><span class="s0">as </span><span class="s1">smf</span>
+
+<span class="s2"># dataframe from .csv</span>
+<span class="s1">input_file_path = </span><span class="s3">&quot;&quot;</span>
+<span class="s2"># input_file_path = &quot;c:\\users\\mathy\\desktop\\&quot;</span>
+<span class="s1">input_file_name = </span><span class="s3">&quot;nba_wins_data.csv&quot;</span>
+<span class="s1">nba_wins_df = pd.read_csv(input_file_path + input_file_name)</span>
+
+<span class="s1">display(HTML(nba_wins_df.head().to_html()))</span>
+<span class="s1">print(</span><span class="s3">&quot;printed only the first five observations...&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Number of rows in the dataset =&quot;</span><span class="s0">, </span><span class="s1">len(nba_wins_df))</span>
+
+<span class="s2"># Simple Linear Regression</span>
+<span class="s2"># Multicollinearity Tests (4 variables = 6 relationships)</span>
+<span class="s2"># Calculate scatterplot, Pearson's R, and p-value for independent to independent variable relationships</span>
+
+<span class="s2"># plot 1</span>
+<span class="s1">plt.figure().set_figwidth(</span><span class="s4">10</span><span class="s1">)</span>
+<span class="s1">plt.plot(nba_wins_df[</span><span class="s3">'avg_elo_n'</span><span class="s1">]</span><span class="s0">, </span><span class="s1">nba_wins_df[</span><span class="s3">'avg_elo_differential'</span><span class="s1">]</span><span class="s0">, </span><span class="s3">'o'</span><span class="s1">)</span>
+<span class="s1">plt.title(</span><span class="s3">'Average Relative Skill Differential vs Average Relative Skill'</span><span class="s0">, </span><span class="s1">fontsize=</span><span class="s4">20</span><span class="s1">)</span>
+<span class="s1">plt.xlabel(</span><span class="s3">'Average Relative Skill'</span><span class="s1">)</span>
+<span class="s1">plt.ylabel(</span><span class="s3">'Average Relative Skill Differential'</span><span class="s1">)</span>
+<span class="s1">plt.show()</span>
+<span class="s1">correlation_coefficient</span><span class="s0">, </span><span class="s1">p_value = st.pearsonr(nba_wins_df[</span><span class="s3">'avg_elo_n'</span><span class="s1">]</span><span class="s0">, </span><span class="s1">nba_wins_df[</span><span class="s3">'avg_elo_differential'</span><span class="s1">])</span>
+<span class="s1">print(</span><span class="s3">&quot;Correlation between Average Relative Skill and the Average Relative Skill Differential&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Pearson Correlation Coefficient =&quot;</span><span class="s0">,  </span><span class="s1">round(correlation_coefficient</span><span class="s0">, </span><span class="s4">4</span><span class="s1">))</span>
+<span class="s1">print(</span><span class="s3">&quot;P-value =&quot;</span><span class="s0">, </span><span class="s1">round(p_value</span><span class="s0">, </span><span class="s4">4</span><span class="s1">))</span>
+
+<span class="s2"># plot 2</span>
+<span class="s1">plt.figure().set_figwidth(</span><span class="s4">10</span><span class="s1">)</span>
+<span class="s1">plt.plot(nba_wins_df[</span><span class="s3">'avg_elo_differential'</span><span class="s1">]</span><span class="s0">, </span><span class="s1">nba_wins_df[</span><span class="s3">'avg_pts_differential'</span><span class="s1">]</span><span class="s0">, </span><span class="s3">'o'</span><span class="s1">)</span>
+<span class="s1">plt.title(</span><span class="s3">'Average Total Points Differential vs Average Relative Skill Differential'</span><span class="s0">, </span><span class="s1">fontsize=</span><span class="s4">20</span><span class="s1">)</span>
+<span class="s1">plt.xlabel(</span><span class="s3">'Average Relative Skill Level Differential'</span><span class="s1">)</span>
+<span class="s1">plt.ylabel(</span><span class="s3">'Average Total Points Differential'</span><span class="s1">)</span>
+<span class="s1">plt.show()</span>
+<span class="s1">correlation_coefficient</span><span class="s0">, </span><span class="s1">p_value = st.pearsonr(nba_wins_df[</span><span class="s3">'avg_pts_differential'</span><span class="s1">]</span><span class="s0">, </span><span class="s1">nba_wins_df[</span><span class="s3">'avg_elo_differential'</span><span class="s1">])</span>
+<span class="s1">print(</span><span class="s3">&quot;Correlation between Average Relative Skill Differential and the Average Total Points &quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Pearson Correlation Coefficient =&quot;</span><span class="s0">,  </span><span class="s1">round(correlation_coefficient</span><span class="s0">,</span><span class="s4">4</span><span class="s1">))</span>
+<span class="s1">print(</span><span class="s3">&quot;P-value =&quot;</span><span class="s0">, </span><span class="s1">round(p_value</span><span class="s0">,</span><span class="s4">4</span><span class="s1">))</span>
+
+<span class="s2"># plot 3</span>
+<span class="s1">plt.figure().set_figwidth(</span><span class="s4">10</span><span class="s1">)</span>
+<span class="s1">plt.plot(nba_wins_df[</span><span class="s3">'avg_pts_differential'</span><span class="s1">]</span><span class="s0">, </span><span class="s1">nba_wins_df[</span><span class="s3">'avg_elo_n'</span><span class="s1">]</span><span class="s0">, </span><span class="s3">'o'</span><span class="s1">)</span>
+<span class="s1">plt.title(</span><span class="s3">'Average Total Points Differential vs Average Relative Skill'</span><span class="s0">, </span><span class="s1">fontsize=</span><span class="s4">20</span><span class="s1">)</span>
+<span class="s1">plt.xlabel(</span><span class="s3">'Average Relative Skill Level'</span><span class="s1">)</span>
+<span class="s1">plt.ylabel(</span><span class="s3">'Average Total Points Differential'</span><span class="s1">)</span>
+<span class="s1">plt.show()</span>
+<span class="s1">correlation_coefficient</span><span class="s0">, </span><span class="s1">p_value = st.pearsonr(nba_wins_df[</span><span class="s3">'avg_pts_differential'</span><span class="s1">]</span><span class="s0">, </span><span class="s1">nba_wins_df[</span><span class="s3">'avg_elo_n'</span><span class="s1">])</span>
+<span class="s1">print(</span><span class="s3">&quot;Correlation between Average Relative Skill and the Average Total Points Differential&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Pearson Correlation Coefficient =&quot;</span><span class="s0">,  </span><span class="s1">round(correlation_coefficient</span><span class="s0">,</span><span class="s4">4</span><span class="s1">))</span>
+<span class="s1">print(</span><span class="s3">&quot;P-value =&quot;</span><span class="s0">, </span><span class="s1">round(p_value</span><span class="s0">,</span><span class="s4">4</span><span class="s1">))</span>
+
+<span class="s2"># plot 4</span>
+<span class="s1">plt.figure().set_figwidth(</span><span class="s4">10</span><span class="s1">)</span>
+<span class="s1">plt.plot(nba_wins_df[</span><span class="s3">'avg_pts_differential'</span><span class="s1">]</span><span class="s0">, </span><span class="s1">nba_wins_df[</span><span class="s3">'avg_pts'</span><span class="s1">]</span><span class="s0">, </span><span class="s3">'o'</span><span class="s1">)</span>
+<span class="s1">plt.title(</span><span class="s3">'Average Total Points vs Average Total Points Differential'</span><span class="s0">, </span><span class="s1">fontsize=</span><span class="s4">20</span><span class="s1">)</span>
+<span class="s1">plt.xlabel(</span><span class="s3">'Average Total Points Differential'</span><span class="s1">)</span>
+<span class="s1">plt.ylabel(</span><span class="s3">'Average Total Points'</span><span class="s1">)</span>
+<span class="s1">plt.show()</span>
+<span class="s1">correlation_coefficient</span><span class="s0">, </span><span class="s1">p_value = st.pearsonr(nba_wins_df[</span><span class="s3">'avg_pts'</span><span class="s1">]</span><span class="s0">, </span><span class="s1">nba_wins_df[</span><span class="s3">'avg_pts_differential'</span><span class="s1">])</span>
+<span class="s1">print(</span><span class="s3">&quot;Correlation between Average Relative Skill and the Average Total Points&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Pearson Correlation Coefficient =&quot;</span><span class="s0">,  </span><span class="s1">round(correlation_coefficient</span><span class="s0">,</span><span class="s4">4</span><span class="s1">))</span>
+<span class="s1">print(</span><span class="s3">&quot;P-value =&quot;</span><span class="s0">, </span><span class="s1">round(p_value</span><span class="s0">,</span><span class="s4">4</span><span class="s1">))</span>
+
+<span class="s2"># plot 5</span>
+<span class="s1">plt.figure().set_figwidth(</span><span class="s4">10</span><span class="s1">)</span>
+<span class="s1">plt.plot(nba_wins_df[</span><span class="s3">'avg_elo_n'</span><span class="s1">]</span><span class="s0">, </span><span class="s1">nba_wins_df[</span><span class="s3">'avg_pts'</span><span class="s1">]</span><span class="s0">, </span><span class="s3">'o'</span><span class="s1">)</span>
+<span class="s1">plt.title(</span><span class="s3">'Average Total Points vs Average Relative Skill'</span><span class="s0">, </span><span class="s1">fontsize=</span><span class="s4">20</span><span class="s1">)</span>
+<span class="s1">plt.xlabel(</span><span class="s3">'Average Relative Skill'</span><span class="s1">)</span>
+<span class="s1">plt.ylabel(</span><span class="s3">'Average Total Points'</span><span class="s1">)</span>
+<span class="s1">plt.show()</span>
+<span class="s1">correlation_coefficient</span><span class="s0">, </span><span class="s1">p_value = st.pearsonr(nba_wins_df[</span><span class="s3">'avg_elo_n'</span><span class="s1">]</span><span class="s0">, </span><span class="s1">nba_wins_df[</span><span class="s3">'avg_pts'</span><span class="s1">])</span>
+<span class="s1">print(</span><span class="s3">&quot;Correlation between Average Relative Skill and the Average Total Points &quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Pearson Correlation Coefficient =&quot;</span><span class="s0">,  </span><span class="s1">round(correlation_coefficient</span><span class="s0">,</span><span class="s4">4</span><span class="s1">))</span>
+<span class="s1">print(</span><span class="s3">&quot;P-value =&quot;</span><span class="s0">, </span><span class="s1">round(p_value</span><span class="s0">,</span><span class="s4">4</span><span class="s1">))</span>
+
+<span class="s2"># plot 6</span>
+<span class="s1">plt.figure().set_figwidth(</span><span class="s4">10</span><span class="s1">)</span>
+<span class="s1">plt.plot(nba_wins_df[</span><span class="s3">'avg_elo_differential'</span><span class="s1">]</span><span class="s0">, </span><span class="s1">nba_wins_df[</span><span class="s3">'avg_pts'</span><span class="s1">]</span><span class="s0">, </span><span class="s3">'o'</span><span class="s1">)</span>
+<span class="s1">plt.title(</span><span class="s3">'Average Total Points vs Average Relative Skill Differential'</span><span class="s0">, </span><span class="s1">fontsize=</span><span class="s4">20</span><span class="s1">)</span>
+<span class="s1">plt.xlabel(</span><span class="s3">'Average Relative Skill Level Differential'</span><span class="s1">)</span>
+<span class="s1">plt.ylabel(</span><span class="s3">'Average Total Points'</span><span class="s1">)</span>
+<span class="s1">plt.show()</span>
+<span class="s1">correlation_coefficient</span><span class="s0">, </span><span class="s1">p_value = st.pearsonr(nba_wins_df[</span><span class="s3">'avg_pts'</span><span class="s1">]</span><span class="s0">, </span><span class="s1">nba_wins_df[</span><span class="s3">'avg_elo_differential'</span><span class="s1">])</span>
+<span class="s1">print(</span><span class="s3">&quot;Correlation between Average Relative Skill Differential and the Average Total Points &quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Pearson Correlation Coefficient =&quot;</span><span class="s0">,  </span><span class="s1">round(correlation_coefficient</span><span class="s0">,</span><span class="s4">4</span><span class="s1">))</span>
+<span class="s1">print(</span><span class="s3">&quot;P-value =&quot;</span><span class="s0">, </span><span class="s1">round(p_value</span><span class="s0">,</span><span class="s4">4</span><span class="s1">))</span>
+
+
+<span class="s2"># OLS Regression Results (15 total independent to dependent relationships exist)</span>
+
+<span class="s2"># Simple Linear Regression</span>
+<span class="s2"># results number refers to corresponding model number</span>
+
+<span class="s2"># results 1</span>
+<span class="s1">print(</span><span class="s3">&quot;MODEL 1&quot;</span><span class="s1">)</span>
+<span class="s1">model1 = smf.ols(</span><span class="s3">'total_wins ~ avg_elo_n'</span><span class="s0">, </span><span class="s1">nba_wins_df).fit()</span>
+<span class="s1">print(model1.summary())</span>
+
+<span class="s2"># results 2</span>
+<span class="s1">print(</span><span class="s3">&quot;MODEL 2&quot;</span><span class="s1">)</span>
+<span class="s1">model2 = smf.ols(</span><span class="s3">'total_wins ~ avg_pts'</span><span class="s0">, </span><span class="s1">nba_wins_df).fit()</span>
+<span class="s1">print(model2.summary())</span>
+
+<span class="s2"># results 5</span>
+<span class="s1">print(</span><span class="s3">&quot;MODEL 5&quot;</span><span class="s1">)</span>
+<span class="s1">model5 = smf.ols(</span><span class="s3">'total_wins ~ avg_elo_differential'</span><span class="s0">, </span><span class="s1">nba_wins_df).fit()</span>
+<span class="s1">print(model5.summary())</span>
+
+<span class="s2"># results 11</span>
+<span class="s1">print(</span><span class="s3">&quot;MODEL 11&quot;</span><span class="s1">)</span>
+<span class="s1">model11 = smf.ols(</span><span class="s3">'total_wins ~ avg_pts_differential'</span><span class="s0">, </span><span class="s1">nba_wins_df).fit()</span>
+<span class="s1">print(model11.summary())</span>
+
+
+<span class="s2"># Multiple Regression</span>
+
+<span class="s2"># results 3</span>
+<span class="s1">print(</span><span class="s3">&quot;MODEL 3&quot;</span><span class="s1">)</span>
+<span class="s1">model3 = smf.ols(</span><span class="s3">'total_wins ~ avg_pts + avg_elo_n'</span><span class="s0">, </span><span class="s1">nba_wins_df).fit()</span>
+<span class="s1">print(model3.summary())</span>
+
+<span class="s2"># results 4</span>
+<span class="s1">print(</span><span class="s3">&quot;MODEL 4&quot;</span><span class="s1">)</span>
+<span class="s1">model4 = smf.ols(</span><span class="s3">'total_wins ~ avg_pts + avg_elo_n + avg_pts_differential + avg_elo_differential'</span><span class="s0">, </span><span class="s1">nba_wins_df).fit()</span>
+<span class="s1">print(model4.summary())</span>
+
+<span class="s2"># results 6</span>
+<span class="s1">print(</span><span class="s3">&quot;MODEL 6&quot;</span><span class="s1">)</span>
+<span class="s1">model6 = smf.ols(</span><span class="s3">'total_wins ~ avg_pts_differential + avg_elo_n'</span><span class="s0">, </span><span class="s1">nba_wins_df).fit()</span>
+<span class="s1">print(model6.summary())</span>
+
+<span class="s2"># results 7</span>
+<span class="s1">print(</span><span class="s3">&quot;MODEL 7&quot;</span><span class="s1">)</span>
+<span class="s1">model7 = smf.ols(</span><span class="s3">'total_wins ~ avg_pts + avg_pts_differential + avg_elo_differential'</span><span class="s0">, </span><span class="s1">nba_wins_df).fit()</span>
+<span class="s1">print(model7.summary())</span>
+
+<span class="s2"># results 8</span>
+<span class="s1">print(</span><span class="s3">&quot;MODEL 8&quot;</span><span class="s1">)</span>
+<span class="s1">model8 = smf.ols(</span><span class="s3">'total_wins ~ avg_pts_differential + avg_elo_differential'</span><span class="s0">, </span><span class="s1">nba_wins_df).fit()</span>
+<span class="s1">print(model8.summary())</span>
+
+<span class="s2"># results 9</span>
+<span class="s1">print(</span><span class="s3">&quot;MODEL 9&quot;</span><span class="s1">)</span>
+<span class="s1">model9 = smf.ols(</span><span class="s3">'total_wins ~ avg_elo_differential + avg_pts'</span><span class="s0">, </span><span class="s1">nba_wins_df).fit()</span>
+<span class="s1">print(model9.summary())</span>
+
+<span class="s2"># results 10</span>
+<span class="s1">print(</span><span class="s3">&quot;MODEL 10&quot;</span><span class="s1">)</span>
+<span class="s1">model10 = smf.ols(</span><span class="s3">'total_wins ~ avg_pts_differential + avg_pts'</span><span class="s0">, </span><span class="s1">nba_wins_df).fit()</span>
+<span class="s1">print(model10.summary())</span>
+
+<span class="s2"># results 12</span>
+<span class="s1">print(</span><span class="s3">&quot;MODEL 12&quot;</span><span class="s1">)</span>
+<span class="s1">model12 = smf.ols(</span><span class="s3">'total_wins ~ avg_pts_differential + avg_elo_n'</span><span class="s0">, </span><span class="s1">nba_wins_df).fit()</span>
+<span class="s1">print(model12.summary())</span>
+
+<span class="s2"># results 13</span>
+<span class="s1">print(</span><span class="s3">&quot;MODEL 13&quot;</span><span class="s1">)</span>
+<span class="s1">model13 = smf.ols(</span><span class="s3">'total_wins ~ avg_elo_n + avg_pts_differential + avg_elo_differential'</span><span class="s0">, </span><span class="s1">nba_wins_df).fit()</span>
+<span class="s1">print(model13.summary())</span>
+
+<span class="s2"># results 14</span>
+<span class="s1">print(</span><span class="s3">&quot;MODEL 14&quot;</span><span class="s1">)</span>
+<span class="s1">model14 = smf.ols(</span><span class="s3">'total_wins ~ avg_pts + avg_elo_n + avg_elo_differential'</span><span class="s0">, </span><span class="s1">nba_wins_df).fit()</span>
+<span class="s1">print(model14.summary())</span>
+
+<span class="s2"># results 15</span>
+<span class="s1">print(</span><span class="s3">&quot;MODEL 15&quot;</span><span class="s1">)</span>
+<span class="s1">model15 = smf.ols(</span><span class="s3">'total_wins ~ avg_pts + avg_elo_n + avg_pts_differential'</span><span class="s0">, </span><span class="s1">nba_wins_df).fit()</span>
+<span class="s1">print(model15.summary())</span>
+</pre>
+</body>
+</html>

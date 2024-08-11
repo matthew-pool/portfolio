@@ -1,0 +1,37 @@
+﻿  glad.c
+  super_mario_bros.cpp
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\shader.h(57,34): warning C4101: 'e': unreferenced local variable
+  (compiling source file 'super_mario_bros.cpp')
+  
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(256,35): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(550,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1259,42): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1260,43): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1368,29): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1388,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1389,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1394,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1395,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1396,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1397,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  shader.cpp
+  Source.cpp
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwSwapBuffers
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwSetFramebufferSizeCallback
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwGetTime
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwGetKey
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwTerminate
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwSetMouseButtonCallback
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwPollEvents
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwInit
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwSetWindowShouldClose
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwSetScrollCallback
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwCreateWindow
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwWindowHint
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwSetInputMode
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwMakeContextCurrent
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwDestroyWindow
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwGetProcAddress
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwSetCursorPosCallback
+super_mario_bros.obj : error LNK2001: unresolved external symbol glfwWindowShouldClose
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\x64\Release\OpenGLSample.exe : fatal error LNK1120: 18 unresolved externals

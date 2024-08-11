@@ -1,0 +1,5 @@
+# Ignored files during build
+.env
+.git
+.gitignore
+node_modules

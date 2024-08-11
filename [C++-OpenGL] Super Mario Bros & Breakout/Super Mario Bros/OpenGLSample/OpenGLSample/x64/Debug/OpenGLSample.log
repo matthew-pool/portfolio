@@ -1,0 +1,39 @@
+﻿  glad.c
+  super_mario_bros.cpp
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\shader.h(57,34): warning C4101: 'e': unreferenced local variable
+  (compiling source file 'super_mario_bros.cpp')
+  
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(256,35): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(550,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1259,42): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1260,43): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1368,29): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1388,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1389,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1394,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1395,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1396,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\OpenGLSample\super_mario_bros.cpp(1397,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  shader.cpp
+  Source.cpp
+  Generating Code...
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwInit referenced in function "bool __cdecl UInitialize(int,char * * const,struct GLFWwindow * *)" (?UInitialize@@YA_NHQEAPEADPEAPEAUGLFWwindow@@@Z)
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwTerminate referenced in function "bool __cdecl UInitialize(int,char * * const,struct GLFWwindow * *)" (?UInitialize@@YA_NHQEAPEADPEAPEAUGLFWwindow@@@Z)
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwWindowHint referenced in function "bool __cdecl UInitialize(int,char * * const,struct GLFWwindow * *)" (?UInitialize@@YA_NHQEAPEADPEAPEAUGLFWwindow@@@Z)
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwCreateWindow referenced in function "bool __cdecl UInitialize(int,char * * const,struct GLFWwindow * *)" (?UInitialize@@YA_NHQEAPEADPEAPEAUGLFWwindow@@@Z)
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwDestroyWindow referenced in function main
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwWindowShouldClose referenced in function main
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwSetWindowShouldClose referenced in function "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPEAUGLFWwindow@@@Z)
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwSetFramebufferSizeCallback referenced in function "bool __cdecl UInitialize(int,char * * const,struct GLFWwindow * *)" (?UInitialize@@YA_NHQEAPEADPEAPEAUGLFWwindow@@@Z)
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwPollEvents referenced in function main
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwSetInputMode referenced in function "bool __cdecl UInitialize(int,char * * const,struct GLFWwindow * *)" (?UInitialize@@YA_NHQEAPEADPEAPEAUGLFWwindow@@@Z)
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwGetKey referenced in function "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPEAUGLFWwindow@@@Z)
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwSetMouseButtonCallback referenced in function "bool __cdecl UInitialize(int,char * * const,struct GLFWwindow * *)" (?UInitialize@@YA_NHQEAPEADPEAPEAUGLFWwindow@@@Z)
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwSetCursorPosCallback referenced in function "bool __cdecl UInitialize(int,char * * const,struct GLFWwindow * *)" (?UInitialize@@YA_NHQEAPEADPEAPEAUGLFWwindow@@@Z)
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwSetScrollCallback referenced in function "bool __cdecl UInitialize(int,char * * const,struct GLFWwindow * *)" (?UInitialize@@YA_NHQEAPEADPEAPEAUGLFWwindow@@@Z)
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwGetTime referenced in function main
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwMakeContextCurrent referenced in function "bool __cdecl UInitialize(int,char * * const,struct GLFWwindow * *)" (?UInitialize@@YA_NHQEAPEADPEAPEAUGLFWwindow@@@Z)
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwSwapBuffers referenced in function main
+super_mario_bros.obj : error LNK2019: unresolved external symbol glfwGetProcAddress referenced in function "bool __cdecl UInitialize(int,char * * const,struct GLFWwindow * *)" (?UInitialize@@YA_NHQEAPEADPEAPEAUGLFWwindow@@@Z)
+C:\OpenGL\GLFW\lib-vc2022\glfw3.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\mathy\OneDrive\Documents\~coding_projects\CS330\Super Mario Bros (OpenGL.cpp)\Super Mario Bros (OpenGL.cpp)\OpenGLSample\x64\Debug\OpenGLSample.exe : fatal error LNK1120: 18 unresolved externals
