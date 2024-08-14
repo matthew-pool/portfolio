@@ -1,0 +1,23 @@
+#NOTE: before committing and pushing, run "git rm -r --cached <folder_name>"
+
+# Ignore directories (try no brackets)
+[C++] Data Structure Analysis/
+[Java] Rescue Animal Program/
+
+"[C++] Data Structure Analysis"
+"[C++] Data Structure Analysis/"
+"C++ Data Structure Analysis"
+"C++ Data Structure Analysis/"
+"*C++* Data Structure Analysis"
+"*C++*Data*Structure*Analysis"
+*C++*Data*Structure*Analysis
+*C++* Data Structure Analysis
+
+C++ Data Structure Analysis/
+**/[C++] Data Structure Analysis/
+**/C++ Data Structure Analysis/
+
+# Ignore files
+
+# Ignore log files
+*.log
